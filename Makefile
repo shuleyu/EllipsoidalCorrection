@@ -7,9 +7,9 @@
 #   If libA.a depends on libB.a, then -lA should appears before -lB.
 COMP      := c++ -std=c++14 -Wall # -fPIC
 OUTDIR    := .
-INCDIR    := -I. -I$(CPPDIR)       # -I$(SACDIR)/include -I$(SACDIR2)/include
-LIBDIR    := -L.                   # -L$(SACDIR)/lib -L$(SACDIR2)/lib
-LIBS      := -lm                   # -lsac -lsacio
+INCDIR    := -I. -I./CPP-Library-Headers # -I$(SACDIR)/include -I$(SACDIR2)/include
+LIBDIR    := -L.                         # -L$(SACDIR)/lib -L$(SACDIR2)/lib
+LIBS      := -lm                         # -lsac -lsacio
 
 # all *cpp files
 SRCFILES  := $(wildcard *.cpp)

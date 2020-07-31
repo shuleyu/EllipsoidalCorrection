@@ -43,7 +43,7 @@ int main(int argc, char * argv[]){
         cout << "usage: ./EllipsoidalCorrection.out [parameterFile]\n";
         cout << "\n";
         cout << "The first row in [parameterFile] is an explanatory header (will be ignored by the program).\n";
-        cout << "The rest rows are inputs\n";
+        cout << "The rest rows are inputs, they need to have the info in each column indicated by the header line.\n";
         cout << "The outputs is stdout (print to screen), and a log file named \"log.txt\"" << endl;
         return 1;
     }
