@@ -255,13 +255,13 @@ string hongyuParse(const string &s) {
 
     int prevPosition = 0, p = 0;
 
-    while (p < s.size()) {
+    while (p < (int)s.size()) {
 
         if (isdigit(s[p])) {
 
             int q = p;
 
-            while (q < s.size() && isdigit(s[q])) {
+            while (q < (int)s.size() && isdigit(s[q])) {
 
                 ++q;
             }
@@ -284,7 +284,7 @@ string hongyuParse(const string &s) {
         }
     }
 
-    if (prevPosition != s.size()) {
+    if (prevPosition != (int)s.size()) {
 
         ret += s.substr(prevPosition);
     }
@@ -364,16 +364,16 @@ pair<bool, string> checkDecorator(const string &s){
 
     int p = 0;
 
-    while (p < s.size()) {
+    while (p < (int)s.size()) {
 
-        while (p < s.size() && ::isupper(s[p])) {
+        while (p < (int)s.size() && ::isupper(s[p])) {
 
             ++p;
         }
 
         int q = p;
 
-        while (q < s.size() && ::islower(s[q])) {
+        while (q < (int)s.size() && ::islower(s[q])) {
 
             ++q;
         }
@@ -473,9 +473,9 @@ string getRidOfSuffix(const std::string &inputPhase) {
 
         ret = "";
 
-        while (p < inputPhase.size()) {
+        while (p < (int)inputPhase.size()) {
 
-            while (p < inputPhase.size() && ::isupper(inputPhase[p])) {
+            while (p < (int)inputPhase.size() && ::isupper(inputPhase[p])) {
 
                 ret += inputPhase[p];
                 ++p;
@@ -483,7 +483,7 @@ string getRidOfSuffix(const std::string &inputPhase) {
 
             int q = p;
 
-            while (q < inputPhase.size() && ::islower(inputPhase[q])) {
+            while (q < (int)inputPhase.size() && ::islower(inputPhase[q])) {
 
                 ++q;
             }

@@ -5,7 +5,7 @@
 # Compile parameters & dirs, some could be overwritten in Run.sh
 # Notice: the order of library names in LIBS could matter.
 #   If libA.a depends on libB.a, then -lA should appears before -lB.
-COMP      := c++ -std=c++14 -Wall # -fPIC
+COMP      := c++ -std=c++14 -Wall        # -fPIC
 OUTDIR    := .
 INCDIR    := -I. -I./CPP-Library-Headers # -I$(SACDIR)/include -I$(SACDIR2)/include
 LIBDIR    := -L.                         # -L$(SACDIR)/lib -L$(SACDIR2)/lib
